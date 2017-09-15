@@ -2,6 +2,8 @@
 
 ## Install the Application
 
+    composer require alziqziq/slim-rest-api
+
     composer install
 
 ## Config Database

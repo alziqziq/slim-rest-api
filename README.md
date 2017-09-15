@@ -2,9 +2,7 @@
 
 ## Install the Application
 
-    composer require alziqziq/slim-rest-api
-
-    composer install
+    composer create-project alziqziq/slim-rest-api [my-app-name]
 
 ## Config Database
 

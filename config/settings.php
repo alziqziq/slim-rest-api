@@ -15,15 +15,16 @@ return [
             'path' => __DIR__ . '/../logs/app.log',
             'level' => \Monolog\Logger::DEBUG,
         ],
+        
         'db' => [
-            'driver'   => $__ENV['DRIVER'],
-            'host'     => $__ENV['HOST'],
-            'database' => $__ENV['DATABASE'],
-            'username' => $__ENV['USERNAME'],
-            'password' => $__ENV['PASSWORD'],
-            'charset'   => $__ENV['CHARSET'],
-            'collation' => $__ENV['COLLATION'],
-            'prefix'    => $__ENV['PREFIX'],
+            'driver'   => getenv('DRIVER'),
+            'host'     => getenv('HOST'),
+            'database' => getenv('DATABASE'),
+            'username' => getenv('USERNAME'),
+            'password' => getenv('PASSWORD'),
+            'charset'   => getenv('CHARSET'),
+            'collation' => getenv('COLLATION'),
+            'prefix'    => getenv('PREFIX'),
         ]
     ],
 ];
